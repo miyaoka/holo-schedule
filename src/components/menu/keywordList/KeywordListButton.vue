@@ -8,7 +8,7 @@ const popover = usePopover();
 <template>
   <button
     class="relative flex size-11 items-center justify-center rounded-full border bg-white shadow-md hover:bg-gray-200"
-    @click="popover.togglePopover"
+    @click.prevent="popover.togglePopover"
     title="popular keywords"
   >
     <i
